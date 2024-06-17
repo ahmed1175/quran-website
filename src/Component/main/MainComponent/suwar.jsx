@@ -63,7 +63,7 @@ const Suwar = ({ suwar }) => {
       </div>
 
       <div
-        className=" mr-auto ml-auto w-[80%] flex flex-wrap flex-row-reverse   text-xl"
+        className=" mr-auto ml-auto w-[80%] flex flex-wrap  md:justify-center flex-row-reverse   text-xl"
         style={
           Descending === false
             ? { flexWrap: "wrap-reverse", flexDirection: "row" }
@@ -89,10 +89,10 @@ const Suwar = ({ suwar }) => {
                       ? item.id
                       : item.name_simple
                   }
-                  className=" group p-3 m-2 border-[1px] border-blue-500 rounded-md w-[31.84%] flex justify-between items-center hover:scale-105 duration-300 cursor-pointer hover:bg-gray-50 hover:border-blue "
+                  className=" group p-3 w-[100%] sm:w-[100%]   sm:p-6  m-2 border-[1px] border-blue-500 rounded-md md:w-[31%]  flex justify-between items-center hover:scale-105 duration-300 cursor-pointer hover:bg-gray-50 hover:border-blue "
                   key={item.id}
                 >
-                  <div className="flex gap-3 group-hover:text-blue">
+                  <div className="flex gap-3 group-hover:text-blue ">
                     ايات
                     <div>{item.verses_count}</div>
                   </div>
@@ -100,7 +100,7 @@ const Suwar = ({ suwar }) => {
                     <div className="text-black font-bold text-xl">
                       {item.name_arabic}
                     </div>
-                    <div className="clip p-5 font-bold bg-gray-300 group-hover:bg-blue group-hover:text-white">
+                    <div className="clip p-2 font-bold bg-gray-300 group-hover:bg-blue group-hover:text-white">
                       {item.id}
                     </div>
                   </div>
@@ -126,7 +126,7 @@ const Suwar = ({ suwar }) => {
                       ? "ali-amran"
                       : item.name_simple
                   }
-                  className=" group p-3 m-2 border-[1px] border-blue-500 rounded-md w-[31.84%] flex justify-between items-center hover:scale-105 duration-300 cursor-pointer hover:bg-gray-50 hover:border-blue "
+                  className=" group p-3 m-2 border-[1px] w-[100%] sm:w-[60%] border-blue-500 rounded-md md:w-[31.84%] flex justify-between items-center hover:scale-105 duration-300 cursor-pointer hover:bg-gray-50 hover:border-blue "
                   key={item.id}
                 >
                   <div className="flex gap-3 group-hover:text-blue">
@@ -137,7 +137,7 @@ const Suwar = ({ suwar }) => {
                     <div className="text-black font-bold text-xl">
                       {item.name_arabic}
                     </div>
-                    <div className="clip p-5 font-bold bg-gray-300 group-hover:bg-blue group-hover:text-white">
+                    <div className="clip p-3 font-bold bg-gray-300 group-hover:bg-blue group-hover:text-white">
                       {item.revelation_order}
                     </div>
                   </div>

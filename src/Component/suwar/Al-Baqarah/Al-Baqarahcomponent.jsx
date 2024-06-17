@@ -8,7 +8,7 @@ const AlBaqarahcomponent = () => {
       "https://mp3quran.net/api/v3/ayat_timing?surah=2&read=5"
     );
     const data = await response.json();
-    setAlBaqarah(data.slice(2,50));
+    setAlBaqarah(data.slice(2, 50));
   };
   useEffect(() => {
     fetchdata();

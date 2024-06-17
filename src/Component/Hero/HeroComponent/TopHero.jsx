@@ -15,7 +15,7 @@ const TopHero = ({ radio, setradio }) => {
           </div>
         )}
         <button
-          className="p-4 m-1 w-[12%] text-white flex gap-2 rounded-md border-[1px] border-white hover:scale-105 hover:duration-300 "
+          className="p-4 m-1 md:w-[12%] text-white flex gap-2 rounded-md border-[1px] border-white hover:scale-105 hover:duration-300 "
           onClick={() => {
             setradio(!radio);
           }}
@@ -32,8 +32,8 @@ const TopHero = ({ radio, setradio }) => {
             </div>
           )}
         </button>
-        <img src={quran} alt={quran} className=" w-[50%]  flex  text-white " loading="lazy"  />
-        <button className="p-4  w-[12%] text-white border-[1px] rounded-md border-white hover:scale-105 hover:duration-300">
+        <img src={quran} alt={quran} className=" w-[50%]  md:flex hidden sm:hideen  text-white " loading="lazy"  />
+        <button className="p-4  md:w-[12%] text-white border-[1px] rounded-md border-white hover:scale-105 hover:duration-300">
           خطط التعلم{" "}
         </button>
       </div>

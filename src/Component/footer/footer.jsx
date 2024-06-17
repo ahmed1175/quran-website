@@ -40,7 +40,7 @@ const Footer = () => {
   ];
   return (
     <div className="flex gap-2 justify-between mr-auto ml-auto w-[80%] ">
-      <div className="flex justify-between w-[50%]   mr-auto ml-auto text-end">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10   mr-auto ml-auto text-end">
         <div>
           <h1 className="m-1 p-4 font-bold">روابط شائعة</h1>
 
@@ -84,6 +84,7 @@ const Footer = () => {
           })}
         </div>
       </div>
+
       <div className="flex flex-col w-[45%] text-end " id="right">
         <h1 className=" text-[18px] font-bold m-1 p-4 leading-[21px] ">
           اقرأ وادرس وتعلم القرآن الكريم

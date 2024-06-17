@@ -8,23 +8,23 @@ const Hero = () => {
   const buttonUnderSearch = [
     {
       name: "سوره الواقعه",
-      Link:""
+      Link: "",
     },
     {
       name: "سورة الملك",
-      Link:""
+      Link: "",
     },
     {
       name: "سورة يس",
-      Link:""
+      Link: "",
     },
     {
       name: "سورة الكهف",
-      Link:""
+      Link: "",
     },
     {
       name: "القراء",
-      Link:"/Alqra"
+      Link: "/Alqra",
     },
   ];
   const [inputText, setInputText] = useState("");
