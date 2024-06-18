@@ -2,7 +2,7 @@ import React from "react";
 
 const Rightsidebar = ({ sidebar, setsidebar, menuElemnt }) => {
   return (
-    <div className="flex gap-1">
+    <div className="md:flex hidden gap-1">
       <div className=" font-[900] px-2 py-2 cursor-pointer">Quran.com</div>
       <span
         className="icon-menu cursor-pointer px-2 py-2  font-bold hover:rounded-full hover:bg-[#d1caca] dark:hover:bg-[#6d6d6d]"
