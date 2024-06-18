@@ -36,27 +36,26 @@ const Nav = () => {
         {/*
         ____________________________ left sidebar_________________________________
          */}
-        <div
-          className="scroll md:fixed hidden  text-black  left-0 top-0 z-10 rounded-lg bg-white w-[30%] h-[100vh] overflow-y-scroll hidden"
-          style={sidebar === "leftsidebar" ? { display: "block" } : {}}
-        >
-          <Topleftbar sidebar={sidebar} setsidebar={setsidebar} />
-          <DarkMode />
-          <div className="flex  justify-end text-end  border-solid shadow-lg flex-col text-sm  ">
-            <ButtonLeftside
-              actives1={actives1}
-              setrotate={setrotate}
-              rotates={rotates}
-            />
-            <Leftsidebar
-              count={count}
-              disabled={disabled}
-              setdisplay={setdisplay}
-              setcount={setcount}
-              rotates={rotates}
-            />
+        {sidebar === "leftsidebar" && (
+          <div className="scroll fixed text-black hidden md:block  left-0 top-0 z-10 rounded-lg bg-white w-[30%] h-[100vh] overflow-y-scroll ">
+            <Topleftbar sidebar={sidebar} setsidebar={setsidebar} />
+            <DarkMode />
+            <div className="flex  justify-end text-end  border-solid shadow-lg flex-col text-sm  ">
+              <ButtonLeftside
+                actives1={actives1}
+                setrotate={setrotate}
+                rotates={rotates}
+              />
+              <Leftsidebar
+                count={count}
+                disabled={disabled}
+                setdisplay={setdisplay}
+                setcount={setcount}
+                rotates={rotates}
+              />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );

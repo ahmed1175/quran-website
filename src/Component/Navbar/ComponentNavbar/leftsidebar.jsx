@@ -2,7 +2,7 @@ const Leftsidebar = ({ count, disabled, setcount, setdisplay, rotates }) => {
   return (
     <div>
       {rotates === "active2" && (
-        <div className="dark:text-[#d1caca] dark:bg-[#343a40] p-5 pb-8">
+        <div className="dark:text-[#d1caca]  dark:bg-[#343a40] p-5 pb-8">
           <div className="flex justify-between py-5 items-center dark:border-blue-200 dark:text-[#d1caca] dark:bg-[#343a40]">
             <select
               name=""
