@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
 const AlqraMain = ({ quraa, button, input }) => {
   const [check, setcheck] = useState(true);
   const [filter, setfilter] = useState(quraa);
@@ -30,8 +29,8 @@ const AlqraMain = ({ quraa, button, input }) => {
         {check || input
           ? quraa.map((item) => {
               return (
-                <Link
-                to={"/quranadio"}
+                <a
+                href={item.moshaf[0].server}
                   key={item}
                   className="group text-start flex-col p-1 m-3 border-[1px] border-blue-500 rounded-md w-[31%] flex justify-around items-center hover:scale-105 duration-300 cursor-pointer hover:bg-gray-50 shadow-lg "
                 >
@@ -44,13 +43,13 @@ const AlqraMain = ({ quraa, button, input }) => {
                   <div className="flex justify-around p-1 text-end ">
                     روايه: {item.moshaf[0].name}{" "}
                   </div>
-                </Link>
+                </a>
               );
             })
           : filter.map((item) => {
               return (
-                <Link
-                to={"/quranadio"}
+                <a
+                href={item.moshaf[0].server}
                   key={item}
                   className="group text-start flex-col p-1 m-3 border-[1px] border-blue-500 rounded-md w-[31%] flex justify-around items-center hover:scale-105 duration-300 cursor-pointer hover:bg-gray-50 shadow-lg "
                 >
@@ -63,7 +62,7 @@ const AlqraMain = ({ quraa, button, input }) => {
                   <div className="flex justify-around p-1 text-end ">
                     روايه: {item.moshaf[0].name}{" "}
                   </div>
-                </Link>
+                </a>
               );
             })}
       </div>

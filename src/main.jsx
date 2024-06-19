@@ -45,14 +45,7 @@ const router = createBrowserRouter([
       </div>
     ),
   },
-  {
-    path: "/quranadio",
-    element: (
-      <div>
-        <Quranadio />
-      </div>
-    ),
-  },
+  
   {
     path: "/Al-Baqarah",
     element: (
