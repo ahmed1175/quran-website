@@ -37,7 +37,7 @@ const Nav = () => {
         ____________________________ left sidebar_________________________________
          */}
         {sidebar === "leftsidebar" && (
-          <div className="scroll fixed text-black hidden md:block  left-0 top-0 z-10 rounded-lg bg-white w-[30%] h-[100vh] overflow-y-scroll ">
+          <div className="scroll fixed text-black w-[100%] md:block  left-0 top-0 z-10 rounded-lg bg-white md:w-[30%] h-[100vh] overflow-y-scroll ">
             <Topleftbar sidebar={sidebar} setsidebar={setsidebar} />
             <DarkMode />
             <div className="flex  justify-end text-end  border-solid shadow-lg flex-col text-sm  ">

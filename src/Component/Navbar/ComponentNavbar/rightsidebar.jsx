@@ -11,7 +11,7 @@ const Rightsidebar = ({ sidebar, setsidebar, menuElemnt }) => {
         }}
       />
       {sidebar === "rightsidebar" && (
-        <div className="sidebar fixed hidden md:block dark:bg-[#343a40] dark:text-[#d1caca] w-[25%]  h-[100vh] bg-white z-10 right-0  top-0 rounded-lg  ">
+        <div className="sidebar fixed  md:block dark:bg-[#343a40] dark:text-[#d1caca] w-[100%] md:w-[25%]  h-[100vh] bg-white z-10 right-0  top-0 rounded-lg  ">
           <div className="flex justify-between p-5 shadow-lg">
             <span
               className=" font-bold cursor-pointer"
