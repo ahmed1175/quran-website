@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import Alqra from "./Pages/alqra.jsx";
 import AlFatihah from "./Pages/Al-Fatihah.jsx";
-import Quranadio from "./Component/alqraPage/quranadio.jsx";
+
 import AlBaqarah from "./Pages/Al-Baqarah.jsx";
 import AnNisa from "./Pages/An-Nisa.jsx";
 import AlMaIdah from "./Pages/Al-Ma'idah.jsx";
